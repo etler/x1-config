@@ -1,0 +1,5 @@
+# Reverse scroll wheel direction
+xinput set-prop 11 279 -114 -114
+# Fix middle mouse trackpoint scrolling
+xinput set-int-prop 12 "Evdev Wheel Emulation" 8 1
+xinput set-int-prop 12 "Evdev Wheel Emulation Button" 8 2
