@@ -1,4 +1,10 @@
-# Touchpad natural scrolling "libinput Natural Scrolling Enabled"
-xinput set-prop 11 284 1
-# Trackpoint middle button scrolling "libinput Scroll Method Enabled"
-xinput set-prop 12 289 0 0 1
+# libinput required instead of synaptic
+
+# Touchpad natural scrolling
+xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
+
+# Trackpoint middle button scrolling
+xinput set-prop "TPPS/2 ALPS TrackPoint" "libinput Scroll Method Enabled" 0 0 1
+
+# Super key shortcut for whisker menu (requires Ctrl+Esc shortcut set)
+xcape -e 'Super_L=Control_L|Escape'
