@@ -3,6 +3,9 @@
 # Touchpad natural scrolling
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
 
+# Enable Touchpad while typing
+xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Disable While Typing Enabled" 0
+
 # Trackpoint middle button scrolling
 xinput set-prop "TPPS/2 ALPS TrackPoint" "libinput Scroll Method Enabled" 0 0 1
 

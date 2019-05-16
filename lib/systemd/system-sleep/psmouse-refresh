@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# $1 is the state (pre or post)-sleep
+if [[ $1 == post ]]; then
+    modprobe -r psmouse
+    modprobe psmouse
+    xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
+    xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Disable While Typing Enabled" 0
+    xinput set-prop "TPPS/2 ALPS TrackPoint" "libinput Scroll Method Enabled" 0 0 1
+fi
